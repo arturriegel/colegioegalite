@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
 
         <title>ÉGALITÉ | Educação Integrada</title>
@@ -12,18 +13,51 @@
     <body>
         <!--Header-->
         <header>
-
+            <picture>
+                <source media="(max-width: 275px)" srcset="imagens/egalite-logo.jpg">
+                <img src="imagens/egalite-logo-escrita.jpg" alt="Logo da escola ÉGALITÉ">
+            </picture>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="ensino/index.html">Ensino</a></li>
+                <li><a href="diferenciais/index.html">Diferenciais</a></li>
+                <li><a href="egalitenews/index.html">Égalité News</a></li>
+                <li><a href="egalicast/index.html">ÉgaliCast</a></li>
+                <li><a href="contato/index.html">Contato</a></li>
+            </ul>
         </header>
         <nav>
 
         </nav>
+
         <!--Content-->
         <main>
 
         </main>
+
+        <!--ChatBot-->
+        <button class="myBtn" onmouseenter="abrir()" onclick="abrir()"></button>
+        <div id="myBox" onmouseleave="fechar()">
+            <div id="boxHeader">
+                <a href="index.html" onclick="fechar()" class="close">X</a>
+                <a href="#" onclick="fechar()" class="minimize">V</a>
+                <h3>Chat</h3>
+            </div>
+            <div class="botBox">
+                <div class="botRes">
+                    <p>Olá! Como posso ajudar você hoje?</p>
+                </div>
+                <button id="btn1" class="btncolors" onclick="opc1()">Dúvidas</button>
+                <button id="btn2" class="btncolors" onclick="opc2()">Atendente</button>
+            </div>
+        </div>
+
         <!--Credits-->
         <footer>
 
         </footer>
+
+        <script src="script.js"></script>
+        <script src="chatbot.js"></script>
     </body>
 </html>
