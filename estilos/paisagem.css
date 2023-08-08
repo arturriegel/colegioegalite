@@ -17,22 +17,8 @@
     --main-font: 'DM Sans', Arial, sans-serif;
 }
 
-header {
-    
-}
-
-header > ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-main {
-
-}
-
-footer {
-
+#menuBtn {
+    display: inline-block;
 }
 
 /*ChatBot*/
