@@ -14,16 +14,46 @@
     --cor03: yellow;
     --cor04: black;
     --cor05: white;
-    --main-font: 'DM Sans', Arial, sans-serif;
+    --main-font: 'Arimo', Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+    font-size: 0.6em;
+    color: black;
+    border: 2px solid black;
+}
+
+header > ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    position: sticky;
+}
+
+header > ul > li > a {
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
 }
 
 img#logo {
     width: 60px;
 }
 
+/* MAIN */
+section#carrosel {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 10px 0px 10px 0px;
+}
+
 section#carrosel ul {
     display: flex;
     overflow: scroll;
+    width: 100vw;
 }
 
 section#carrosel ul > li {
@@ -32,7 +62,7 @@ section#carrosel ul > li {
 }
 
 section#carrosel ul > li > img {
-    width: 85vw;
+    width: 100vw;
 }
 
 /* ChatBot
