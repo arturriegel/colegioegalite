@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)">
-        <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)">
+        <link rel="stylesheet" href="estilos/style.css" media="all">
 
         <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 
@@ -13,15 +12,50 @@
     </head>
 
     <body>
-        <!--Header-->
         <header>
-            <img src="imagens/logo-egalite-escrita-embaixo.png" alt="Logo Colégio Égalite">
-            <div id="menuBtn">
-                <img src="imagens/menuhamburguer.png" alt="Menu" width="50px">
-            </div>
+            <ul>
+                <li><a href="institucional/index.html">INSTITUCIONAL</a></li>
+                <li><a href="pedagogico/index.html">PEDAGÓGICO</a></li>
+            </ul>
+            <img src="imagens/logominimalista.jpg" alt="Logo Colégio Égalité" id="logo">
+            <ul>
+                <li><a href="materiais/index.html">MATERIAIS PARA DOWNLOAD</a></li>
+                <li><a href="galerias/index.html">GALERIAS</a></li>
+            </ul>
         </header>
 
-        <!--ChatBot-->
+        <main>
+            <section id="carrosel">
+                <ul>
+                    <li><img src="imagens/carrosel1.jpeg" alt="teste carrosel"></li>
+                    <li><img src="imagens/carrosel2.jpeg" alt="teste carrosel"></li>
+                    <li><img src="imagens/carrosel3.jpeg" alt="teste carrosel"></li>
+                </ul>
+            </section>
+
+            <section id="depoimentos">
+                <h1>DEPOIMENTOS</h1>
+                <iframe src="" frameborder="1" width="350px" height="200px">Seu navegador não é compatível com esta aplicação!</iframe>
+            </section>
+
+            <section id="ensino">
+                <iframe src="" frameborder="1" width="350px" height="150px"></iframe>
+            </section>
+
+            <section id="eventos">
+                <h1>EVENTOS</h1>
+                <ul>
+                    <li><iframe src="" frameborder="1" width="100px" height="60px"></iframe></li>
+                    <li><iframe src="" frameborder="1" width="100px" height="60px"></iframe></li>
+                    <li><iframe src="" frameborder="1" width="100px" height="60px"></iframe></li>
+                    <li><iframe src="" frameborder="1" width="100px" height="60px"></iframe></li>
+                    <li><iframe src="" frameborder="1" width="100px" height="60px"></iframe></li>
+                    <li><iframe src="" frameborder="1" width="100px" height="60px"></iframe></li>
+                </ul>
+            </section>
+        </main>
+
+        <!--ChatBot
         <button class="myBtn" onmouseenter="abrir()" onclick="abrir()"></button>
         <div id="myBox" onmouseleave="fechar()">
             <div id="boxHeader">
@@ -40,7 +74,16 @@
 
         <!--Credits-->
         <footer>
-
+            <div>
+                <h1>ESCOLHA O SEU FUTURO</h1>
+                <img src="imagens/botautoatendimento.png" alt="Bot">
+            </div>
+            <div>
+                <ul>
+                    <li><a href="https://goo.gl/maps/h8YXufXmNRfGjFbG6" target="_blank" rel="external">Av. Carlos Augusto Evangelista Py, n° 2060 Barra do Ribeiro / RS</a></li>
+                    <li>Telefones: (51)3482.1214 | (51) 99740.0514</li>
+                </ul>
+            </div>
         </footer>
 
         <script src="script.js"></script>

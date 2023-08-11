@@ -17,11 +17,25 @@
     --main-font: 'DM Sans', Arial, sans-serif;
 }
 
-#menuBtn {
-    display: inline-block;
+img#logo {
+    width: 60px;
 }
 
-/*ChatBot*/
+section#carrosel ul {
+    display: flex;
+    overflow: scroll;
+}
+
+section#carrosel ul > li {
+    text-align: center;
+    list-style-type: none;
+}
+
+section#carrosel ul > li > img {
+    width: 85vw;
+}
+
+/* ChatBot
 a.close {
     color: black;
     background-color: var(--cor05);
@@ -36,7 +50,7 @@ a.minimize {
 
 .myBtn {
     display: flex;
-    background-image: url('imagens/botautoatendimento.png');
+    background-image: url('../imagens/botautoatendimento.png');
     background-color: var(--cor03);
     background-position: center center;
     background-size: 70px 70px;

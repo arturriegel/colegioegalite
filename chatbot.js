@@ -1,3 +1,4 @@
+
 //Get Elements
 const myBtn = document.getElementsByClassName('myBtn')
 const myBox = document.getElementById('myBox')
@@ -47,11 +48,8 @@ btnRes1.appendChild(linkres1)
 btnRes11.appendChild(linkres11e2)
 //
 btnRes1.setAttribute('onclick', 'opc3()')
-btnRes1.setAttribute('class', 'btncolors')
 btnRes11.setAttribute('onclick', 'opc4()')
-btnRes11.setAttribute('class', 'btncolors')
 btnRes2.setAttribute('onclick', 'opc4()')
-btnRes2.setAttribute('class', 'btncolors')
 
 //Function Para Respostas
 function opc1() {
