@@ -19,30 +19,38 @@
 
 /* HEADER */
 header {
-    font-size: 0.6em;
+    font-size: 0.5em;
     color: black;
     border: 2px solid black;
+    justify-content: space-around;
 }
 
-header > ul {
-    width: 100%;
+header ul {
+    width: 100vw;
     list-style: none;
     display: flex;
-    position: sticky;
+    align-items: center;
+    justify-content: space-around;
 }
 
-header > ul > li > a {
-    margin: 10px;
+header ul > li > a {
     text-decoration: none;
-    padding: 10px;
+    text-align: center;
     color: black;
 }
 
-img#logo {
+div#logo img {
     width: 60px;
 }
 
+div#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* MAIN */
+/*CARROSEL*/
 section#carrosel {
     display: flex;
     justify-content: center;
@@ -53,16 +61,35 @@ section#carrosel {
 section#carrosel ul {
     display: flex;
     overflow: scroll;
-    width: 100vw;
+    width: 99vw;
 }
 
 section#carrosel ul > li {
     text-align: center;
     list-style-type: none;
+    justify-content: space-around;
+    width: 99vw;
 }
 
 section#carrosel ul > li > img {
-    width: 100vw;
+    border: 1px solid black;
+    width: 392px;
+}
+
+/*DEPOIMENTOS*/
+section#depoimentos {
+    border: 2px solid black;
+    padding: 10px 0px;
+}
+
+section#depoimentos h1 {
+    text-align: center;
+    padding: 5px;
+
+}
+/* FOOTER */
+#botimg {
+    width: 50px;
 }
 
 /* ChatBot
