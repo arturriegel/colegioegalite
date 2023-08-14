@@ -22,7 +22,6 @@ header {
     font-size: 0.5em;
     color: black;
     border: 2px solid black;
-    justify-content: space-around;
 }
 
 header ul {
@@ -43,10 +42,9 @@ div#logo img {
     width: 60px;
 }
 
-div#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#logo {
+    text-align: center;
+    width: 60px;
 }
 
 /* MAIN */
@@ -55,13 +53,14 @@ section#carrosel {
     display: flex;
     justify-content: center;
     border: 2px solid black;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 section#carrosel ul {
     display: flex;
     overflow: scroll;
     width: 99vw;
+    
 }
 
 section#carrosel ul > li {
@@ -72,21 +71,80 @@ section#carrosel ul > li {
 }
 
 section#carrosel ul > li > img {
-    border: 1px solid black;
     width: 392px;
 }
 
 /*DEPOIMENTOS*/
 section#depoimentos {
-    border: 2px solid black;
-    padding: 10px 0px;
+    padding: 50px 0px;
+    justify-content: center;
 }
 
 section#depoimentos h1 {
     text-align: center;
-    padding: 5px;
-
+    padding-bottom: 10px;
 }
+
+section#depoimentos div {
+    text-align: center;
+}
+
+/*ENSINO*/
+#ensino > div#boxens {
+    border: 2px solid black;
+    width: 350px;
+    height: 150px;
+    margin: auto;
+}
+
+#ensino > div#boxens > div#infantil {
+    display: inline-block;
+    background-color: yellow;
+    width: 30px;
+    height: 150px;
+    border-right: 1px solid black;
+}
+
+#ensino > div#boxens > div#fundamental {
+    display: inline-block;
+    background-color: blue;
+    width: 30px;
+    margin-left: -4px;
+    height: 150px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#ensino > div#boxens > div#medio {
+    display: inline-block;
+    background-color: red;
+    margin-left: -5px;
+    width: 30px;
+    height: 150px;
+    border-right: 2px solid black;
+    border-left: 1px solid black;
+}
+
+#ensino > div#boxens > div#selecaoens {
+    display: inline-flex;
+    background-color: gray;
+    margin-left: -4px;
+    width: 253.3px;
+    height: 150px;
+    text-align: center;
+}
+
+#ensino > div#boxens > div#selecaoens > p {
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    font-size: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 150px;
+}
+
 /* FOOTER */
 #botimg {
     width: 50px;
