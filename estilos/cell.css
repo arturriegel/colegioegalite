@@ -9,11 +9,6 @@
 }
 
 :root {
-    --cor01: red;
-    --cor02: blue;
-    --cor03: yellow;
-    --cor04: black;
-    --cor05: white;
     --main-font: 'Arimo', Arial, Helvetica, sans-serif;
 }
 
@@ -25,9 +20,9 @@ header {
 }
 
 header ul {
-    width: 100vw;
-    list-style: none;
     display: flex;
+    width: 99vw;
+    list-style: none;
     align-items: center;
     justify-content: space-around;
 }
@@ -71,7 +66,8 @@ section#carrosel ul > li {
 }
 
 section#carrosel ul > li > img {
-    width: 392px;
+    width: 100vw;
+    height: 98.9%;
 }
 
 /*DEPOIMENTOS*/
@@ -92,7 +88,7 @@ section#depoimentos div {
 /*ENSINO*/
 #ensino > div#boxens {
     border: 2px solid black;
-    width: 350px;
+    width: 80vw;
     height: 150px;
     margin: auto;
 }
@@ -100,7 +96,7 @@ section#depoimentos div {
 #ensino > div#boxens > div#infantil {
     display: inline-block;
     background-color: yellow;
-    width: 30px;
+    width: 8vw;
     height: 150px;
     border-right: 1px solid black;
 }
@@ -108,8 +104,8 @@ section#depoimentos div {
 #ensino > div#boxens > div#fundamental {
     display: inline-block;
     background-color: blue;
-    width: 30px;
-    margin-left: -4px;
+    width: 8vw;
+    margin-left: -5px;
     height: 150px;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -119,33 +115,130 @@ section#depoimentos div {
     display: inline-block;
     background-color: red;
     margin-left: -5px;
-    width: 30px;
+    width: 8vw;
     height: 150px;
     border-right: 2px solid black;
     border-left: 1px solid black;
 }
 
 #ensino > div#boxens > div#selecaoens {
-    display: inline-flex;
-    margin-left: -4px;
-    width: 253.3px;
-    height: 150px;
+    display: inline;
     text-align: center;
+    width: 54.7vw;
+    height: 150px;
 }
 
-#ensino > div#boxens > div#selecaoens > p {
+#ensino > div#boxens > div#selecaoens p {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     font-size: 0.8em;
     position: absolute;
-    text-align: center;
-    width: 250px;
+    width: 54.7vw;
     height: 150px;
 }
 
-/* FOOTER */
+/*DESTAQUES*/
+#destaques {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+#destaques h1 {
+    padding: 10px 0px;
+}
+
+#boxdstq {
+    width: 90vw;
+    height: 250px;
+    margin: auto;
+    border: 2px solid black;
+}
+
+.dstlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px 40px 0px;
+}
+
+#dst1 {
+    background-color: red;
+    width: 22vw;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#dst2 {
+    background-color: red;
+    width: 22vw;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#dst3 {
+    background-color: red;
+    width: 22vw;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#dst4 {
+    background-color: red;
+    width: 22vw;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#dst5 {
+    background-color: red;
+    width: 22vw;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#dst6 {
+    background-color: red;
+    width: 22vw;
+    height: 60px;
+    border: 1px solid black;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+#slogan {
+    font-size: 0.8em;
+    border-bottom: 3px solid white;
+    margin-bottom: 5px;
+}
+
+#slogan h1 {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
 #botimg {
     width: 50px;
+    padding: 0px 0px 0px 10px;
+}
+
+#infos {padding-bottom: 5px;}
+
+#infos > ul > li a, #infos > ul > li {
+    text-decoration: underline;
+    color: white;
+    font-size: 3vw;
+    line-height: 15px;
+}
+
+a:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
 }
 
 /* ChatBot
