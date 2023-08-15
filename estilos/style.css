@@ -127,7 +127,6 @@ section#depoimentos div {
 
 #ensino > div#boxens > div#selecaoens {
     display: inline-flex;
-    background-color: gray;
     margin-left: -4px;
     width: 253.3px;
     height: 150px;
@@ -137,11 +136,10 @@ section#depoimentos div {
 #ensino > div#boxens > div#selecaoens > p {
     display: inline-flex;
     align-items: center;
-    margin: auto;
     font-size: 0.8em;
     position: absolute;
     text-align: center;
-    width: 200px;
+    width: 250px;
     height: 150px;
 }
 
