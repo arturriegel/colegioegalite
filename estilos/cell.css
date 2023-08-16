@@ -54,8 +54,7 @@ section#carrosel {
 section#carrosel ul {
     display: flex;
     overflow: scroll;
-    width: 99vw;
-    
+    width: 99vw; 
 }
 
 section#carrosel ul > li {
@@ -68,6 +67,14 @@ section#carrosel ul > li {
 section#carrosel ul > li > img {
     width: 100vw;
     height: 98.9%;
+    position: relative;
+}
+
+#lArrow {
+    position: absolute;
+    width: 30px;
+    right: 90%;
+    display: flexbox;
 }
 
 /*DEPOIMENTOS*/
