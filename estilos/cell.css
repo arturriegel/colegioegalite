@@ -51,30 +51,27 @@ section#carrosel {
     margin: 10px 0px 0px 0px;
 }
 
-section#carrosel ul {
+#slide-content {
     display: flex;
     overflow: scroll;
     width: 99vw; 
 }
 
-section#carrosel ul > li {
+#slide-content div {
     text-align: center;
     list-style-type: none;
     justify-content: space-around;
     width: 99vw;
 }
 
-section#carrosel ul > li > img {
+#slide-content div > img {
     width: 100vw;
     height: 98.9%;
     position: relative;
 }
 
-#lArrow {
-    position: absolute;
-    width: 30px;
-    right: 90%;
-    display: flexbox;
+#radio1, #radio2, #radio3 {
+    display: block;
 }
 
 /*DEPOIMENTOS*/
