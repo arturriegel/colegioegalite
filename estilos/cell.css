@@ -51,27 +51,64 @@ section#carrosel {
     margin: 10px 0px 0px 0px;
 }
 
-#slide-content {
-    display: flex;
-    overflow: scroll;
-    width: 99vw; 
-}
-
-#slide-content div {
-    text-align: center;
-    list-style-type: none;
-    justify-content: space-around;
+.slider {
+    margin: 0 auto;
     width: 99vw;
+    overflow: hidden;
 }
 
-#slide-content div > img {
-    width: 100vw;
-    height: 98.9%;
+.slides {
+    width: 400%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
     position: relative;
 }
 
-#radio1, #radio2, #radio3 {
-    display: block;
+.slide img {
+    width: 99vw;
+}
+
+.manual-navigation {
+    position: relative;
+    width: 99vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .05s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -33vw;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -66vw;
 }
 
 /*DEPOIMENTOS*/

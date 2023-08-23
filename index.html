@@ -44,24 +44,41 @@
 
         <main>
             <section id="carrosel">
-                <div id="slide-content">
+                <div class="slider">
+                    <div class="slides">
+                        <!--Radio Buttons-->
+                        <input type="radio" name="radio" id="radio1">
+                        <input type="radio" name="radio" id="radio2">
+                        <input type="radio" name="radio" id="radio3">
+                        <!--Fim Radio Buttons-->
+
+                        <!--Slides-->
+                        <div class="slide-first">
+                            <img src="imagens/carrosel1.jpeg" alt="teste crrs1">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/carrosel2.jpeg" alt="teste crrs2">
+                        </div>
+                        <div class="slide">
+                            <img src="imagens/carrosel3.jpeg" alt="teste crrs3">
+                        </div>
                     
-                    <div id="slide1">
-                        <img src="imagens/carrosel1.jpeg" alt="teste carrosel" id="crrs1">
+                        <!--Fim dos Slides-->
+
+                        <!--Navigation Auto-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                        </div>
                     </div>
 
-                    <div id="slide2">
-                        <img src="imagens/carrosel2.jpeg" alt="teste carrosel" id="crrs2">
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
                     </div>
-
-                    <div id="slide3">
-                        <img src="imagens/carrosel3.jpeg" alt="teste carrosel" id="crrs3">
-                    </div>
-                    
-                    <label for="crrs1"><input type="radio" name="btnslide" id="radio1"></label>
-                    <label for="crrs2"><input type="radio" name="btnslide" id="radio2"></label>
-                    <label for="crrs3"><input type="radio" name="btnslide" id="radio3"></label>
-                </div> 
+                </div>
             </section>
 
             <section id="depoimentos">
