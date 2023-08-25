@@ -39,41 +39,49 @@ var txtm = document.querySelector('#medio p')
 // Função para lidar com o clique no botão de ensino infantil
 function btnInf() {
     if (selEns.style.width = '54.7vw') { // Verificando a largura do elemento de seleção
-        selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
-        btni.style.width = '54.7vw'; // Definindo a largura do botão de ensino infantil
+        btni.style.width = '54.7vw'; // Definindo a largura do botão de ensino fundamental
+        txti.style.width = '54.7vw'
+        txti.innerText = 'EDUCAÇÃO INFANTIL'
+        btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino infantil
         btnm.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
-        btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino fundamental
         txtEns.innerText = ''
-        btnf.innerText = ''
+        txtf.innerText = ''
         txtm.innerText = ''
-        btni.innerText = 'EDUCAÇÃO INFANTIL'
-    } else {
-        btni.style.width = '54.7vw'; // Definindo a largura do botão de ensino infantil
-        btnm.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
-        btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino fundamental
+        txtf.style.width = '8vw'
+        txtm.style.width = '8vw'
+        txtEns.style.width = '8vw'
+        selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
     }
 }
 
 // Função para lidar com o clique no botão de ensino fundamental
 function btnFund() {
-    selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
     btnf.style.width = '54.7vw'; // Definindo a largura do botão de ensino fundamental
+    txtf.style.width = '54.7vw'
+    txtf.innerText = 'ENSINO FUNDAMENTAL'
     btni.style.width = '8vw'; // Redefinindo a largura do botão de ensino infantil
     btnm.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
     txtEns.innerText = ''
     txti.innerText = ''
     txtm.innerText = ''
-    txtf.innerText = 'ENSINO FUNDAMENTAL'
+    txti.style.width = '8vw'
+    txtm.style.width = '8vw'
+    txtEns.style.width = '8vw'
+    selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
 }
 
 // Função para lidar com o clique no botão de ensino médio
 function btnMed() {
-    selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
-    btnm.style.width = '54.7vw'; // Definindo a largura do botão de ensino médio
-    btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino fundamental
-    btni.style.width = '8vw'; // Redefinindo a largura do botão de ensino infantil
-    txtEns.innerText = ''
-    btni.innerText = ''
-    txtf.innerText = ''
+    btnm.style.width = '54.7vw'; // Definindo a largura do botão de ensino fundamental
+    txtm.style.width = '54.7vw'
     txtm.innerText = 'ENSINO MEDIO'
+    btni.style.width = '8vw'; // Redefinindo a largura do botão de ensino infantil
+    btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
+    txtEns.innerText = ''
+    txti.innerText = ''
+    txtf.innerText = ''
+    txti.style.width = '8vw'
+    txtf.style.width = '8vw'
+    txtEns.style.width = '8vw'
+    selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
 }
