@@ -1,3 +1,4 @@
+//CARROSSEL
 // Inicializa a variável "count" com o valor 1 para rastrear a imagem atual.
 let count = 1;
 
@@ -24,12 +25,16 @@ function nextImage() {
     document.getElementById('radio' + count).checked = true;
 }
 
+//SELETOR DE ENSINO
 // Obtendo referências para os elementos HTML
 var btnm = document.getElementById('medio'); // Botão para o ensino médio
 var btnf = document.getElementById('fundamental'); // Botão para o ensino fundamental
 var btni = document.getElementById('infantil'); // Botão para o ensino infantil
 var selEns = document.getElementById('selecaoens'); // Elemento de seleção de ensino
 var txtEns = document.querySelector('#selecaoens p'); // Parágrafo dentro do elemento de seleção
+var txti = document.querySelector('#infantil p')
+var txtf = document.querySelector('#fundamental p')
+var txtm = document.querySelector('#medio p')
 
 // Função para lidar com o clique no botão de ensino infantil
 function btnInf() {
@@ -38,13 +43,14 @@ function btnInf() {
         btni.style.width = '54.7vw'; // Definindo a largura do botão de ensino infantil
         btnm.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
         btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino fundamental
-        selEns.removeChild(txtEns)
+        txtEns.innerText = ''
+        btnf.innerText = ''
+        txtm.innerText = ''
+        btni.innerText = 'EDUCAÇÃO INFANTIL'
     } else {
         btni.style.width = '54.7vw'; // Definindo a largura do botão de ensino infantil
         btnm.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
         btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino fundamental
-        btni.innerText = 'ENSINO FUNDAMENTAL'
-        
     }
 }
 
@@ -54,15 +60,20 @@ function btnFund() {
     btnf.style.width = '54.7vw'; // Definindo a largura do botão de ensino fundamental
     btni.style.width = '8vw'; // Redefinindo a largura do botão de ensino infantil
     btnm.style.width = '8vw'; // Redefinindo a largura do botão de ensino médio
-    selEns.removeChild(txtEns)
+    txtEns.innerText = ''
+    txti.innerText = ''
+    txtm.innerText = ''
+    txtf.innerText = 'ENSINO FUNDAMENTAL'
 }
 
 // Função para lidar com o clique no botão de ensino médio
 function btnMed() {
-
     selEns.style.width = '8vw'; // Definindo a largura do elemento de seleção
     btnm.style.width = '54.7vw'; // Definindo a largura do botão de ensino médio
     btnf.style.width = '8vw'; // Redefinindo a largura do botão de ensino fundamental
     btni.style.width = '8vw'; // Redefinindo a largura do botão de ensino infantil
-    selEns.removeChild(txtEns)
+    txtEns.innerText = ''
+    btni.innerText = ''
+    txtf.innerText = ''
+    txtm.innerText = 'ENSINO MEDIO'
 }
