@@ -1,4 +1,4 @@
-
+/*
 //Get Elements
 const myBtn = document.getElementsByClassName('myBtn')
 const myBox = document.getElementById('myBox')
@@ -136,3 +136,4 @@ function opc4() {
     botRes2.appendChild(txtResBot2)
     txtResBot2.innerText = 'Encontrou o que procurava? Espero que sim, mas caso precise de mais ajuda, clique no X que está posicionado no meu canto superior esquerdo e volte aqui para escolher outras opções!'
 }
+*/
