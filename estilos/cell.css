@@ -50,8 +50,8 @@ div#logo img {
 
 
 /* MAIN */
-/*CARROSEL*/
-section#carrosel {
+/*CARROSSEL*/
+section#carrossel {
     display: flex;
     justify-content: center;
     border: 2px solid black;
@@ -100,25 +100,15 @@ section#carrosel {
     transition: .05s;
 }
 
-.manual-btn:not(:last-child) {
-    margin-right: 20px;
-}
+.manual-btn:not(:last-child) { margin-right: 20px; }
 
-.manual-btn:hover {
-    background-color: #fff;
-}
+.manual-btn:hover { background-color: #fff; }
 
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
+#radio1:checked ~ .first { margin-left: 0; }
 
-#radio2:checked ~ .first {
-    margin-left: -99vw;
-}
+#radio2:checked ~ .first { margin-left: -99vw; }
 
-#radio3:checked ~ .first {
-    margin-left: -198vw;
-}
+#radio3:checked ~ .first { margin-left: -198vw; }
 
 /*DEPOIMENTOS*/
 section#depoimentos {
@@ -131,9 +121,7 @@ section#depoimentos h1 {
     padding-bottom: 10px;
 }
 
-section#depoimentos div {
-    text-align: center;
-}
+section#depoimentos div { text-align: center; }
 
 /*ENSINO*/
 #ensino > div#boxens {
@@ -204,9 +192,7 @@ section#depoimentos div {
     text-align: center;
 }
 
-#destaques h1 {
-    padding: 10px 0px;
-}
+#destaques h1 { padding: 10px 0px; }
 
 #boxdstq {
     width: 90vw;

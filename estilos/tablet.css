@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* HEADER */
+header { 
+    font-size: 0.9em; 
+    margin-bottom: 30px;
+}
+
+header, header ul { height: 9vh; }
+
+div#logo img { width: 80px; }
+
+/* CARROSSEL */
+section#carrossel, .slider, .slides, .manual-navigation { width: 80vw; }
+
+section#carrossel { 
+    margin: 10px auto 0px auto; 
+    border: 2px solid black;
+    padding: 1px;
+}
+
+.slides { width: 400%; }
+
+.slide img, .slide-first img {
+    width: 100%; 
+    height: 100%; 
+}
+
+#radio2:checked ~ .first, #radio3:checked ~.first { margin-left: -80vw; }
+
+/* DEPOIMENTOS */
+#depoimentos h1 {
+    font-size: 2.5em;
+    padding-bottom: 20px;
+}
+
+#depoimentos iframe {
+    width: 550px;
+    height: 350px;
+}
+
+/* ENSINO */
