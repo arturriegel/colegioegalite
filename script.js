@@ -8,7 +8,7 @@ document.getElementById('radio1').checked = true
 // Define um intervalo para chamar repetidamente a função "nextImage" a cada 3 segundos.
 setInterval(function() {
     nextImage()
-}, 3000)
+}, 5000)
 
 // Declaração da função "nextImage" que será chamada para alternar as imagens.
 function nextImage() {

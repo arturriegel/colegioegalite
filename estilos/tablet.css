@@ -8,7 +8,7 @@ header {
 
 header, header ul { height: 9vh; }
 
-div#logo img { width: 80px; }
+div#logo img { width: 90px; }
 
 /* CARROSSEL */
 section#carrossel, .slider, .slides, .manual-navigation { width: 80vw; }
@@ -26,7 +26,8 @@ section#carrossel {
     height: 100%; 
 }
 
-#radio2:checked ~ .first, #radio3:checked ~.first { margin-left: -80vw; }
+#radio2:checked ~ .first { margin-left: -80vw; }
+#radio3:checked ~.first { margin-left: -160vw; }
 
 /* DEPOIMENTOS */
 #depoimentos h1 {
@@ -40,3 +41,10 @@ section#carrossel {
 }
 
 /* ENSINO */
+section#ensino { height: 200px; }
+#ensino div#boxens { height: 200px; }
+#ensino div#boxens > div#infantil { height: 200px; }
+#ensino div#boxens > div#fundamental { height: 200px; }
+#ensino div#boxens > div#medio { height: 200px; }
+#ensino div#boxens > div#selecaoens > p#txtens { height: 200px; }
+.pEns { height: 200px; }
