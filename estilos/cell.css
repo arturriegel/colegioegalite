@@ -208,42 +208,7 @@ section#depoimentos div { text-align: center; }
     margin: 10px 0px 40px 0px;
 }
 
-#dst1 {
-    background-color: red;
-    width: 22vw;
-    height: 60px;
-    border: 1px solid black;
-}
-
-#dst2 {
-    background-color: red;
-    width: 22vw;
-    height: 60px;
-    border: 1px solid black;
-}
-
-#dst3 {
-    background-color: red;
-    width: 22vw;
-    height: 60px;
-    border: 1px solid black;
-}
-
-#dst4 {
-    background-color: red;
-    width: 22vw;
-    height: 60px;
-    border: 1px solid black;
-}
-
-#dst5 {
-    background-color: red;
-    width: 22vw;
-    height: 60px;
-    border: 1px solid black;
-}
-
-#dst6 {
+.dsts {
     background-color: red;
     width: 22vw;
     height: 60px;
