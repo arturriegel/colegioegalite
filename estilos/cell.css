@@ -255,28 +255,33 @@ section#depoimentos div { text-align: center; }
 footer{
     background-color: rgb(83, 83, 83);
     color: white;
+    height: 120px;
 }
 
 #slogan {
-    font-size: 0.8em;
+    font-size: 0.7em;
     border-bottom: 3px solid white;
     margin-bottom: 5px;
+    box-sizing: border-box;
 }
 
 #slogan h1 {
     display: flex;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 3vw;
 }
 
 #botimg {
     width: 50px;
-    padding: 0px 0px 0px 10px;
+    padding-left: 2vw;
 }
 
-#infos {padding-bottom: 5px;}
+#infos { 
+    height: 50px; 
+    box-sizing: border-box;
+}
 
-#infos > ul > li a, #infos > ul > li {
+#infos > p a{
     text-decoration: underline;
     color: white;
     font-size: 3vw;

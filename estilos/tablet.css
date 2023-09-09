@@ -41,10 +41,39 @@ section#carrossel {
 }
 
 /* ENSINO */
-section#ensino { height: 200px; }
-#ensino div#boxens { height: 200px; }
-#ensino div#boxens > div#infantil { height: 200px; }
-#ensino div#boxens > div#fundamental { height: 200px; }
-#ensino div#boxens > div#medio { height: 200px; }
-#ensino div#boxens > div#selecaoens > p#txtens { height: 200px; }
-.pEns { height: 200px; }
+section#ensino, #ensino div#boxens, #ensino div#boxens > div#infantil, #ensino div#boxens > div#fundamental, #ensino div#boxens > div#medio, #ensino div#boxens > div#selecaoens > p#txtens, .pEns { height: 225px; }
+
+.pEns, #ensino > div#boxens > div#selecaoens p {
+    font-size: 1.5em;
+}
+
+/*DESTAQUES*/
+section#destaques, div#boxdstq { height: 400px; }
+
+div#boxdstq h1 { 
+    font-size: 2.5em; 
+    padding: 15px 0px;
+}
+
+.dsts { height: 120px; }
+
+/*FOOTER*/
+footer { height: 170px; }
+
+footer #slogan { height: 90px; }
+
+footer #slogan > h1 { 
+    font-size: 4em; 
+    height: 90px;
+    padding: 0px 5vw;
+}
+
+#botimg { 
+    width: 90px; 
+    padding-left: 7vw;
+}
+
+footer #infos {
+    height: 80px;
+    font-size: 3vw;
+}
