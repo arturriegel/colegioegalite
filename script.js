@@ -1,4 +1,4 @@
-//CARROSSEL
+// CARROSSEL 
 // Inicializa a variável "count" com o valor 1 para rastrear a imagem atual.
 let count = 1
 
@@ -10,9 +10,7 @@ setInterval(function() {
     nextImage()
 }, 5000)
 
-// Declaração da função "nextImage" que será chamada para alternar as imagens.
 function nextImage() {
-    // Incrementa o valor de "count" para avançar para a próxima imagem.
     count++
 
     // Verifica se o valor de "count" ultrapassou 3 (número de imagens disponíveis).
@@ -25,6 +23,25 @@ function nextImage() {
     document.getElementById('radio' + count).checked = true
 }
 
+//POSIÇÃO DO FOOTER
+window.addEventListener("scroll", function() {
+    var infos = document.getElementById("infos");
+    var slogan = document.getElementById("slogan");
+    
+    var infosRect = infos.getBoundingClientRect();
+    
+    if (infosRect.top < window.innerHeight && infosRect.bottom >= 0) {
+        // A div#infos está visível na janela de visualização
+        // Remova a propriedade position: fixed; do footer#slogan
+        slogan.style.position = "static";
+    } else {
+        // A div#infos não está visível na janela de visualização
+        // Recoloque a propriedade position: fixed; no footer#slogan
+        slogan.style.position = "fixed";
+    }
+});
+
+
 //SELETOR DE ENSINO
 // Obtendo referências para os elementos HTML
 var btnm = document.getElementById('medio') 
@@ -36,64 +53,75 @@ var txti = document.querySelector('#infantil p')
 var txtf = document.querySelector('#fundamental p')
 var txtm = document.querySelector('#medio p')
 
+//Obtendo tamanho da tela para media query
+var screenSize = window.screen.width
+var btnExpanded = '54.7vw'
+var btnDefault = '8vw'
+
+//Definindo qual o tamanho será aplicado nos botões
+if (screenSize >= 1200) {
+    btnExpanded = '31vw'
+    btnDefault = '3vw' 
+}
+
 // Função para lidar com o clique no botão de ensino infantil
 function btnInf() {
-    if (selEns.style.width = '54.7vw') { 
-        btni.style.width = '54.7vw';
-        txti.style.width = '54.7vw'
+    if (selEns.style.width = btnExpanded) { 
+        btni.style.width = btnExpanded
+        txti.style.width = btnExpanded
         txti.innerText = 'EDUCAÇÃO INFANTIL'
-        btnf.style.width = '8vw'
-        btnm.style.width = '8vw'
+        btnf.style.width = btnDefault
+        btnm.style.width = btnDefault
         txtEns.innerText = ''
         txtf.innerText = ''
         txtm.innerText = ''
-        txtf.style.width = '8vw'
-        txtm.style.width = '8vw'
-        txtEns.style.width = '8vw'
-        selEns.style.width = '8vw'
+        txtf.style.width = btnDefault
+        txtm.style.width = btnDefault
+        txtEns.style.width = btnDefault
+        selEns.style.width = btnDefault
     }
 }
 
 // Função para lidar com o clique no botão de ensino fundamental
 function btnFund() {
-    btnf.style.width = '54.7vw'
-    txtf.style.width = '54.7vw'
+    btnf.style.width = btnExpanded
+    txtf.style.width = btnExpanded
     txtf.innerText = 'ENSINO FUNDAMENTAL'
-    btni.style.width = '8vw'
-    btnm.style.width = '8vw'
+    btni.style.width = btnDefault
+    btnm.style.width = btnDefault
     txtEns.innerText = ''
     txti.innerText = ''
     txtm.innerText = ''
-    txti.style.width = '8vw'
-    txtm.style.width = '8vw'
-    txtEns.style.width = '8vw'
-    selEns.style.width = '8vw'
+    txti.style.width = btnDefault
+    txtm.style.width = btnDefault
+    txtEns.style.width = btnDefault
+    selEns.style.width = btnDefault
 }
 
 // Função para lidar com o clique no botão de ensino médio
 function btnMed() {
-    btnm.style.width = '54.7vw'
-    txtm.style.width = '54.7vw'
+    btnm.style.width = btnExpanded
+    txtm.style.width = btnExpanded
     txtm.innerText = 'ENSINO MEDIO'
-    btni.style.width = '8vw'
-    btnf.style.width = '8vw'
+    btni.style.width = btnDefault
+    btnf.style.width = btnDefault
     txtEns.innerText = ''
     txti.innerText = ''
     txtf.innerText = ''
-    txti.style.width = '8vw'
-    txtf.style.width = '8vw'
-    txtEns.style.width = '8vw'
-    selEns.style.width = '8vw'
+    txti.style.width = btnDefault
+    txtf.style.width = btnDefault
+    txtEns.style.width = btnDefault
+    selEns.style.width = btnDefault
 }
 
 //Função para lidar com o clique de reset da seleção de ensino
 function btnRst() {
-    selEns.style.width = '54.7vw'
-    txtEns.style.width = '54.7vw'
+    selEns.style.width = btnExpanded
+    txtEns.style.width = btnExpanded
     txtEns.innerText = 'Clique nas cores para descobrir os níveis de ensino'
-    btni.style.width = '8vw'
-    btnf.style.width = '8vw'
-    btnm.style.width = '8vw'
+    btni.style.width = btnDefault
+    btnf.style.width = btnDefault
+    btnm.style.width = btnDefault
     txti.innerText = ''
     txtf.innerText = ''
     txtm.innerText = ''

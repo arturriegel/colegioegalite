@@ -216,18 +216,21 @@ section#depoimentos div { text-align: center; }
 }
 
 /*FOOTER*/
-
 footer{
     background-color: rgb(83, 83, 83);
     color: white;
-    height: 120px;
+    height: 138px;
 }
 
 #slogan {
-    font-size: 0.7em;
+    display: flex;
+    top: 92%;
+    width: 100%;
+    background-color: rgb(83, 83, 83);
     border-bottom: 3px solid white;
     margin-bottom: 5px;
-    box-sizing: border-box;
+    font-size: 0.7em;
+    height: 70px;
 }
 
 #slogan h1 {
@@ -237,13 +240,16 @@ footer{
 }
 
 #botimg {
-    width: 50px;
-    padding-left: 2vw;
+    position: absolute;
+    right: 5%;
+    width: 70px;
+    height: 70px;
 }
 
 #infos { 
     height: 50px; 
     box-sizing: border-box;
+    background-color: rgb(83, 83, 83)
 }
 
 #infos > p a{
@@ -254,7 +260,7 @@ footer{
 }
 
 a:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.475);
 }
 
 /* ChatBot

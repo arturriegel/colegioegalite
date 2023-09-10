@@ -30,12 +30,12 @@ section#carrossel {
 #radio3:checked ~.first { margin-left: -160vw; }
 
 /* DEPOIMENTOS */
-#depoimentos h1 {
+section#depoimentos h1 {
     font-size: 2.5em;
     padding-bottom: 20px;
 }
 
-#depoimentos iframe {
+section#depoimentos iframe {
     width: 550px;
     height: 350px;
 }
@@ -58,9 +58,12 @@ div#boxdstq h1 {
 .dsts { height: 120px; }
 
 /*FOOTER*/
-footer { height: 170px; }
+footer { height: 160px; }
 
-footer #slogan { height: 90px; }
+footer #slogan { 
+    top: 92.3%;
+    height: 90px; 
+}
 
 footer #slogan > h1 { 
     font-size: 4em; 
@@ -69,11 +72,11 @@ footer #slogan > h1 {
 }
 
 #botimg { 
-    width: 90px; 
-    padding-left: 7vw;
+    width: 90px;
+    height: 90px; 
 }
 
 footer #infos {
-    height: 80px;
+    height: 70px;
     font-size: 3vw;
 }

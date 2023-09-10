@@ -1,2 +1,113 @@
 @charset "UTF-8";
 
+/* HEADER */
+header { 
+    font-size: .9em; 
+    margin-bottom: 30px;
+}
+
+header, header ul { height: 12vh; }
+
+div#logo img { width: 90px; }
+
+/* CARROSSEL */
+section#carrossel, .slider, .slides, .manual-navigation { width: 50vw; }
+
+section#carrossel { 
+    margin: 10px auto 0px auto; 
+    border: 2px solid black;
+    padding: 1px;
+}
+
+.slides { width: 400%; }
+
+.slide img, .slide-first img {
+    width: 100%; 
+    height: 100%; 
+}
+
+#radio2:checked ~ .first { margin-left: -50vw; }
+#radio3:checked ~.first { margin-left: -100vw; }
+
+/* DEPOIMENTOS */
+section#depoimentos h1 {
+    font-size: 2.5em;
+    padding: 30px 0px 20px 0px;
+}
+
+#depoimentos iframe {
+    width: 650px;
+    height: 400px;
+}
+
+/* ENSINO */
+#ensino > div#boxens {
+    width: 40vw;
+    height: 200px;
+}
+
+#ensino > div#boxens > div#infantil, #ensino > div#boxens > div#fundamental, #ensino > div#boxens > div#medio {
+    width: 3vw;
+    height: 200px;
+}
+
+#ensino > div#boxens > div#selecaoens {
+    width: 31vw;
+    height: 200px;
+}
+
+#ensino > div#boxens > div#selecaoens p, .pEns {
+    font-size: 1.2em;
+    width: 31vw;
+    height: 200px;
+}
+
+/*DESTAQUES*/
+section#destaques, div#boxdstq {
+    margin: auto;
+    height: 600px; 
+    width: 70vw;
+}
+
+div#boxdstq h1 { 
+    font-size: 2.5em; 
+    padding: 15px 0px;
+}
+
+.dsts { 
+    height: 200px; 
+    width: 20vw;
+    padding: 10px;
+}
+
+/*FOOTER*/
+footer { height: 128px; }
+
+footer #slogan {
+    top: 91.6%;
+    height: 60px;
+}
+
+#slogan h1 { 
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 3em; 
+    height: 60px;
+}
+
+#botimg { 
+    position:absolute;
+    right: 5%;
+    width: 60px;
+    height: 60px; 
+}
+
+#infos > p a, #infos p {
+    font-size: 1em;
+}
+
+footer #infos {
+    height: 40px;
+    font-size: 1em;
+}
