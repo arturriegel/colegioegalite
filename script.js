@@ -23,25 +23,6 @@ function nextImage() {
     document.getElementById('radio' + count).checked = true
 }
 
-//POSIÇÃO DO FOOTER
-window.addEventListener("scroll", function() {
-    var infos = document.getElementById("infos");
-    var slogan = document.getElementById("slogan");
-    
-    var infosRect = infos.getBoundingClientRect();
-    
-    if (infosRect.top < window.innerHeight && infosRect.bottom >= 0) {
-        // A div#infos está visível na janela de visualização
-        // Remova a propriedade position: fixed; do footer#slogan
-        slogan.style.position = "static";
-    } else {
-        // A div#infos não está visível na janela de visualização
-        // Recoloque a propriedade position: fixed; no footer#slogan
-        slogan.style.position = "fixed";
-    }
-});
-
-
 //SELETOR DE ENSINO
 // Obtendo referências para os elementos HTML
 var btnm = document.getElementById('medio') 
