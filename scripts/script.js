@@ -107,3 +107,10 @@ function btnRst() {
     txtf.innerText = ''
     txtm.innerText = ''
 }
+
+function toTopPage() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}

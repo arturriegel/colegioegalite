@@ -216,6 +216,13 @@ section#depoimentos div { text-align: center; }
 }
 
 /*FOOTER*/
+#buttonToTop {
+    font-size: 30px;
+    padding-bottom: 15px;
+    margin-left: 90vw;
+    cursor: pointer;
+}
+
 footer{
     background-color: rgb(83, 83, 83);
     color: white;
